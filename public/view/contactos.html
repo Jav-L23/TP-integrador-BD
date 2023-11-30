@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="../img/iconologo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="../css/contactos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;400;500&display=swap" rel="stylesheet">
+    <title>Contactos</title>
+</head>
+
+<body>
+
+    <!-- Nav menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark p-0" style="background-color: #2e2853;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="img-logo" src="../img/logo Ws2.webp" width="100px" alt="Logotipo" />
+                <span class="navbar-brand-text fw-bolder text-capitalize">NetSec</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../view/empresa.html">La Empresa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../view/servicio.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../view/contactos.html">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- contactos -->
+    <header class="portada">
+        <section class="tex-portada">
+            <h2>Contáctenos</h2>
+        </section>
+
+        <section class="box-contacto">
+            <!-- Formulario -->
+            <div class="contacto form">
+                <h3>Deje su mensaje</h3>
+                <form>
+                    <div class="formBox">
+                        <div class="row-datos">
+                            <div class="inputBox">
+                                <span>Nombre</span>
+                                <input type="text" placeholder="Pedro">
+                            </div>
+                            <div class="inputBox">
+                                <span>Apellido</span>
+                                <input type="text" placeholder="Giménez">
+                            </div>
+                        </div>
+
+                        <div class="row-datos">
+                            <div class="inputBox">
+                                <span>Email</span>
+                                <input type="text" placeholder="ejemplo@email.com">
+                            </div>
+                            <div class="inputBox">
+                                <span>Telefono</span>
+                                <input type="text" placeholder="15 xxxx xxxx">
+                            </div>
+                        </div>
+
+                        <div class="row-msj">
+                            <div class="inputBox">
+                                <span>Mensaje</span>
+                                <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+                                <textarea placeholder="Escribe tu mensaje"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row-msj">
+                            <div class="inputBox">
+                                <input type="submit" value="Enviar">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Info -->
+            <div class="contacto info">
+                <h3>Contactos</h3>
+                <div class="box-info">
+                    <p>Av Caseros 3039, Parque Patricios. <br>Buenos aires</p>
+                </div>
+                <div class="box-info">
+                    <a href="mailto:info@netsec.com">info@netsec.com</a>
+                </div>
+                <div class="box-info">
+                    <a href="tel:+1552451584">1552451584</a>
+                </div>
+                <!-- Redes sociales -->
+                <ul class=" sci">
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="../iconos/facebook.png" alt=""
+                                class="img-redes"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="../iconos/instagram.png" alt=""
+                                class="img-redes"></a></li>
+                    <li><a href="https://web.whatsapp.com/" target="_blank"><img src="../iconos/whatsapp.png" alt=""
+                                class="img-redes"></a></li>
+                </ul>
+
+            </div>
+
+            <!-- Map -->
+            <div class="contacto map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.7008510528394!2d-58.40864589014954!3d-34.63699927282949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb0fd52ca403%3A0xb2fd7523f49593c2!2sAv.%20Caseros%203039%2C%20C1242%20CABA!5e0!3m2!1ses-419!2sar!4v1700999653851!5m2!1ses-419!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </header>
+
+    <!-- pie de pagina -->
+    <footer class="container-fluid text-center text-light align-content-center bg-dark">
+        <div class="row  m-auto p-4 align-items-center" style="width: 80%; height: 100%;">
+            <p class="col">Preguntas frecuentes</p>
+            <p class="col">Contactos</p>
+            <p class="col">Prensa</p>
+            <p class="col">Conferencias</p>
+            <p class="col">Términos y condiciones</p>
+            <p class="col">Privacidad</p>
+            <p class="col">Estudiantes</p>
+        </div>
+
+        <div class="p-3" style="background-color: black;">
+            ©2022 Copyright
+            <a class="text-light" href="#">Javier Limachi A.</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.tex-portada {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2em;
+}
+
+.tex-portada h2 {
+  color: #fff;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+/* servicios */
+.servicios {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #435585;
+  display: flex;
+  /* min-height: 100vh; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 0;
+  color: #46aeef;
+  text-decoration: underline #ef4e46 2px;
+  font-weight: bold;
+}
+
+small {
+  color: #46aeef;
+  /* padding-top:  2px; */
+  padding-bottom: 10px;
+}
+
+p {
+  color: #fff;
+  font-size: 0.9em;
+  line-height: 23px;
+}
+
+.skewed a {
+  color: #46aeef;
+}
+
+.skewed a:hover {
+  color: #ef4e46;
+}
+
+.skewed {
+  width: 45em;
+  color: #f5e8c7;
+  display: flex;
+  background: #111;
+  margin: 2em 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.text {
+  padding: 1.5em;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.image {
+  width: 50%;
+  /* height: 17em; */
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.image::before {
+  content: "";
+  position: absolute;
+  left: -6.1em;
+  top: 50%;
+  transform: translateY(-50%) rotate(20deg);
+  background: #111;
+  width: 40%;
+  height: 140%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+/* .skewed-left .image::before {
+  transform: translateY(-50%) rotate(-20deg);
+  left: initial;
+  right: -6.1em;
+} */
+
+img {
+  width: 140%;
+}
+
+/* responcive */
+
+@media screen and (max-width: 750px) {
+  .skewed {
+    display: block;
+    width: 20em;
+  }
+  .image,
+  .text {
+    width: 100%;
+  }
+  img {
+    width: 160;
+  }
+  .skewed .image::before {
+    width: 120%;
+    height: 40%;
+    top: -5em;
+    left: 50%;
+    transform: translateX(-50%) rotate(10deg);
+  }
+
+  .skewed-left .image::before {
+    transform: translateX(-50%) rotate(-10deg);
+    top: initial;
+    bottom: -5em;
+  }
+}
